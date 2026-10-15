@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استوديو جداريات وحدة الأنشطة الطلابية | إدارة الإسكان الطلابي - جامعة الملك سعود</title>
+  <link rel="stylesheet" href="css/poster_white.css">
+  <style>
+    body {
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top Studio Header */
+    .studio-navbar {
+      background-color: #ffffff;
+      border-bottom: 2px solid var(--border-medium);
+      padding: 14px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .studio-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .studio-brand img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .studio-brand-titles h1 {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--ksu-blue);
+      line-height: 1.2;
+    }
+
+    .studio-brand-titles p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Wall Switcher Tabs */
+    .wall-selector-tabs {
+      display: flex;
+      gap: 8px;
+      background: var(--bg-subtle);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border-light);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      font-family: var(--font-heading);
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tab-btn:hover {
+      color: var(--ksu-blue);
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: var(--ksu-blue);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border: 1px solid var(--border-light);
+    }
+
+    /* Studio Main Stage */
+    .studio-stage {
+      flex: 1;
+      padding: 24px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 1920px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Action Toolbar */
+    .stage-action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .active-poster-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .poster-title-text {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--ksu-blue);
+    }
+
+    .poster-dim-badge {
+      font-family: var(--font-accent);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-dark);
+      background: var(--gold-accent-light);
+      border: 1px solid var(--gold-accent);
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+
+    .btn-action-primary {
+      background: var(--ksu-blue);
+      color: #ffffff;
+      border: none;
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .btn-action-primary:hover {
+      background: var(--ksu-blue-dark);
+    }
+
+    .btn-action-outline {
+      background: #ffffff;
+      color: var(--text-secondary);
+      border: 1px solid var(--border-medium);
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-outline:hover {
+      background: var(--bg-subtle);
+      border-color: var(--ksu-blue);
+      color: var(--ksu-blue);
+    }
+
+    /* Iframe Frame */
+    .preview-frame-container {
+      background: #ffffff;
+      border: 1px solid var(--border-medium);
+      border-radius: 14px;
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      min-height: 850px;
+      display: flex;
+    }
+
+    .preview-frame-container iframe {
+      width: 100%;
+      height: 860px;
+      border: none;
+      background: #ffffff;
+    }
+
+    /* Cards Info Row */
+    .walls-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .wall-info-card {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .wall-info-card h4 {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--ksu-blue);
+      margin-bottom: 4px;
+    }
+
+    .wall-info-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .wall-info-card .card-meta {
+      margin-top: 8px;
+      font-family: var(--font-accent);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Studio Navbar -->
+  <header class="studio-navbar">
+    <div class="studio-brand">
+      <img src="assets/housing_logo.png" alt="شعار إدارة الإسكان">
+      <div class="studio-brand-titles">
+        <h1>استوديو جداريات الأنشطة الطلابية</h1>
+        <p>إدارة الإسكان الطلابي — عمادة شؤون الطلاب | جامعة الملك سعود</p>
+      </div>
+    </div>
+
+    <!-- Wall Switcher Tabs -->
+    <nav class="wall-selector-tabs" role="tablist">
+      <button class="tab-btn active" data-src="design1_main.html" data-title="الجدارية الأساسية — الهيكل التنظيمي الشامل" data-dim="320 × 120 سم (3.20 م)">
+        <span>🏛️ الجدارية الأساسية (320 سم)</span>
+      </button>
+      <button class="tab-btn" data-src="design2_external.html" data-title="الجدارية الخارجية — مجالات اللجان ومميزات المشاركة" data-dim="275 × 120 سم (2.75 م)">
+        <span>📢 الجدارية الخارجية (275 سم)</span>
+      </button>
+      <button class="tab-btn" data-src="design3_gateway.html" data-title="الجدارية الثالثة — بوابة القيادة والترشيح مع QR" data-dim="138 × 120 سم (1.38 م)">
+        <span>🎯 الجدارية الثالثة (138 سم)</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Studio Stage -->
+  <main class="studio-stage">
+
+    <!-- Active Stage Toolbar -->
+    <div class="stage-action-bar">
+      <div class="active-poster-meta">
+        <span id="active-poster-title" class="poster-title-text">الجدارية الأساسية — الهيكل التنظيمي الشامل</span>
+        <span id="active-poster-dim" class="poster-dim-badge">320 × 120 سم (3.20 م)</span>
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <a id="btn-open-separate" href="design1_main.html" target="_blank" class="btn-action-outline">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          فتح الجدارية في صفحة مستقلة
+        </a>
+        <button id="btn-print-current" class="btn-action-primary">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+          طباعة / تصدير (Print 1:1)
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Poster Live Preview Frame -->
+    <div class="preview-frame-container">
+      <iframe id="poster-frame" src="design1_main.html"></iframe>
+    </div>
+
+    <!-- 3 Wall Architectural Summary Cards -->
+    <section class="walls-info-grid">
+      <div class="wall-info-card" style="border-top: 3px solid var(--ksu-blue);">
+        <h4>1. الجدارية الأساسية (الداخلية)</h4>
+        <p>مخصصة للجدار الرئيسي الداخلي لوحدة الأنشطة. تستعرض الهيكل التنظيمي الكامل واللجان الست بفرق عملها الـ 27 ورؤيتها الاستراتيجية.</p>
+        <div class="card-meta">المقاس: 320 × 120 سم • النسبة: 2.67:1</div>
+      </div>
+
+      <div class="wall-info-card" style="border-top: 3px solid var(--gold-accent);">
+        <h4>2. الجدارية الخارجية (ممر السكن)</h4>
+        <p>مخصصة لجدار خارجي في ممر الحركة. تركز على إبراز مجالات الأنشطة ومميزات المشاركة وتحفيز الطلاب لمسح رمز QR والانضمام.</p>
+        <div class="card-meta">المقاس: 275 × 120 سم • النسبة: 2.29:1</div>
+      </div>
+
+      <div class="wall-info-card" style="border-top: 3px solid var(--color-agriculture);">
+        <h4>3. الجدارية الثالثة (بوابة الترشيح)</h4>
+        <p>مخصصة لموقع مدمج. تركز على هوية الوحدة، القيادة، القيم المؤسسية السبع، وكود QR واضح وسريع للترشيح المباشر.</p>
+        <div class="card-meta">المقاس: 138 × 120 سم • النسبة: 1.15:1</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const iframe = document.getElementById('poster-frame');
+    const titleEl = document.getElementById('active-poster-title');
+    const dimEl = document.getElementById('active-poster-dim');
+    const openBtn = document.getElementById('btn-open-separate');
+    const printBtn = document.getElementById('btn-print-current');
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const src = btn.getAttribute('data-src');
+        const title = btn.getAttribute('data-title');
+        const dim = btn.getAttribute('data-dim');
+
+        iframe.src = src;
+        titleEl.textContent = title;
+        dimEl.textContent = dim;
+        openBtn.href = src;
+      });
+    });
+
+    iframe.onload = () => {
+      try {
+        iframe.contentWindow.scrollTo(0, 0);
+      } catch (e) {}
+    };
+
+    printBtn.addEventListener('click', () => {
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.print();
+      } else {
+        window.print();
+      }
+    });
+  </script>
+</body>
+</html>

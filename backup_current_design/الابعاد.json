@@ -1,0 +1,20 @@
+{
+  "walls": [
+    {
+      "id": 1,
+      "length": 320,
+      "height": 120
+    },
+    {
+      "id": 2,
+      "length": 275,
+      "height": 120
+    },
+    {
+      "id": 3,
+      "length": 138,
+      "height": 120
+    }
+  ],
+  "unit": "cm"
+}

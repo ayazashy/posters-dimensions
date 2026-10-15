@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الجدارية الأساسية (320 × 120 سم) - الهيكل التنظيمي الشامل | وحدة الأنشطة الطلابية</title>
+  <link rel="stylesheet" href="css/poster_white.css">
+  <style>
+    /* Exact 320cm x 120cm Aspect Ratio (8:3 = 2.667:1) */
+    .poster-container {
+      aspect-ratio: 320 / 120;
+      min-height: 720px;
+    }
+
+    .org-chart-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 36px 0;
+    }
+
+    .committees-6-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      padding: 0 36px 16px;
+      flex: 1;
+      align-items: stretch;
+    }
+
+    /* Colors per committee */
+    .c-tech { --comm-color: var(--color-tech); --comm-bg: var(--color-tech-bg); }
+    .c-media { --comm-color: var(--color-media); --comm-bg: var(--color-media-bg); }
+    .c-talent { --comm-color: var(--color-talent); --comm-bg: var(--color-talent-bg); }
+    .c-pr { --comm-color: var(--color-pr); --comm-bg: var(--color-pr-bg); }
+    .c-logistics { --comm-color: var(--color-logistics); --comm-bg: var(--color-logistics-bg); }
+    .c-agriculture { --comm-color: var(--color-agriculture); --comm-bg: var(--color-agriculture-bg); }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Navigation & Print Toolbar -->
+  <aside class="floating-action-bar">
+    <a href="index.html" style="color: var(--ksu-blue); display: flex; align-items: center; gap: 6px;">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      لوحة الاستعراض الشاملة
+    </a>
+    <span style="color: var(--border-medium);">|</span>
+    <a href="design2_external.html" style="color: var(--text-secondary);">الجدارية الخارجية (275 سم)</a>
+    <span style="color: var(--border-medium);">|</span>
+    <a href="design3_gateway.html" style="color: var(--text-secondary);">الجدارية الثالثة (138 سم)</a>
+    <span style="color: var(--border-medium);">|</span>
+    <button class="btn-floating-print" onclick="window.print()">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+      طباعة الجدارية (Print 1:1)
+    </button>
+  </aside>
+
+  <!-- Main Canvas (320 cm x 120 cm) -->
+  <main class="poster-container">
+
+    <!-- Top Header -->
+    <header class="poster-top-bar">
+      <div class="branding-group">
+        <div class="branding-logo-box">
+          <img src="assets/housing_logo.png" alt="شعار إدارة الإسكان الطلابي">
+        </div>
+        <div class="branding-titles">
+          <h1>الهيكل التنظيمي لوحدة الأنشطة الطلابية</h1>
+          <p>جامعة الملك سعود | عمادة شؤون الطلاب | إدارة الإسكان الطلابي — الفصل الدراسي الأول 1448هـ</p>
+        </div>
+      </div>
+
+      <div class="poster-meta-pill">
+        <div class="meta-dim-tag">الجدارية الأساسية • المقاس: 320 × 120 سم</div>
+        <div class="meta-location-tag">الموقع: الجدار الرئيسي الداخلي لوحدة الأنشطة الطلابية</div>
+      </div>
+    </header>
+
+    <!-- Organizational Tree Top Node -->
+    <section class="org-chart-tree">
+      <div class="org-lead-box">
+        <h3>وحدة الأنشطة الطلابية — إدارة الإسكان الطلابي</h3>
+        <span>الإشراف العام والتنسيق المؤسسي للجان الطلابية</span>
+      </div>
+      <div class="org-stem-down"></div>
+      <div class="org-horizontal-branch"></div>
+    </section>
+
+    <!-- 6 Committees Grid -->
+    <div class="committees-6-grid">
+
+      <!-- Committee 1: الابتكار والتطوير التقني -->
+      <article class="comm-col-card c-tech">
+        <div class="comm-card-head">
+          <div class="comm-icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M20 7V4h-3V2h-2v2h-6V2H7v2H4v3H2v2h2v6H2v2h2v3h3v2h2v-2h6v2h2v-2h3v-3h2v-2h-2V9h2V7h-2zm-2 10H6V7h12v10zm-7-2h2v-2h2v-2h-2V9h-2v2H9v2h2z"/></svg>
+          </div>
+          <div class="comm-card-title">
+            <h3>لجنة الابتكار والتطوير التقني</h3>
+          </div>
+        </div>
+
+        <div class="comm-vision-snippet">
+          <strong>الرؤية:</strong> بناء بيئة تقنية محفزة تسهم في التحول الرقمي وابتكار حلول تخدم مجتمع الإسكان الطلابي.
+        </div>
+
+        <div class="comm-teams-header">
+          <span>فرق العمل التخصصية:</span>
+          <span>5 فرق</span>
+        </div>
+
+        <div class="teams-vertical-list">
+          <div class="team-item-box">
+            <strong>1. الابتكار وتطوير الحلول</strong>
+            <p>استقبال الاحتياجات وتحويلها لنماذج أولية ومشاريع قابلة للتنفيذ.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>2. البرمجة والتطبيقات</strong>
+            <p>تطوير المنصات والأنظمة وقواعد البيانات وتوثيق الحلول وصيانتها.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>3. الذكاء الاصطناعي</strong>
+            <p>استكشاف أدوات AI لتحسين الخدمات وأتمتة العمليات وتحليل البيانات.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>4. الدعم الفني والمساندة</strong>
+            <p>تقديم الدعم التقني للساكنين ورصد المشكلات وتشغيل عيادات الدعم.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>5. التدريب والورش التقنية</strong>
+            <p>تصميم برامج تدريبية تقنية متدرجة وقياس أثر الورش المتخصصة.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 2: الإعلام -->
+      <article class="comm-col-card c-media">
+        <div class="comm-card-head">
+          <div class="comm-icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>
+          </div>
+          <div class="comm-card-title">
+            <h3>لجنة الإعلام</h3>
+          </div>
+        </div>
+
+        <div class="comm-vision-snippet">
+          <strong>الرؤية:</strong> تعزيز حضور أنشطة الإسكان إعلامياً بمحتوى مبتكر ومهني ينقل الصورة المشرقة للمجتمع السكني.
+        </div>
+
+        <div class="comm-teams-header">
+          <span>فرق العمل التخصصية:</span>
+          <span>5 فرق</span>
+        </div>
+
+        <div class="teams-vertical-list">
+          <div class="team-item-box">
+            <strong>1. التحرير والمحتوى</strong>
+            <p>كتابة الأخبار والتقارير والنصوص الإعلامية ومراجعة الصياغات.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>2. التصوير والتوثيق</strong>
+            <p>التغطية الفوتوغرافية والمرئية للفعاليات وإدارة الأرشيف البصري.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>3. التصميم والهوية البصرية</strong>
+            <p>ابتكار المواد الإعلانية وتطبيق الهوية البصرية وإعداد المطبوعات.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>4. المونتاج والإنتاج المرئي</strong>
+            <p>تحرير الفيديوهات والريلز الترويجية والملخصات الختامية الاحترافية.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>5. النشر وإدارة القنوات</strong>
+            <p>جدولة ونشر المحتوى ومتابعة التفاعل وتحليل مؤشرات الوصول الرقمي.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 3: المواهب والفنون -->
+      <article class="comm-col-card c-talent">
+        <div class="comm-card-head">
+          <div class="comm-icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.27 19.59 10.58 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-3.5 8c-.83 0-1.5-.67-1.5-1.5S7.67 8 8.5 8s1.5.67 1.5 1.5S9.33 11 8.5 11zm7 0c-.83 0-1.5-.67-1.5-1.5S14.67 8 15.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-3.5 6.5c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z"/></svg>
+          </div>
+          <div class="comm-card-title">
+            <h3>لجنة المواهب والفنون</h3>
+          </div>
+        </div>
+
+        <div class="comm-vision-snippet">
+          <strong>الرؤية:</strong> بيئة حاضنة لاكتشاف وتنمية المواهب وإبراز الإبداع الفني والثقافي لدى طلاب الإسكان.
+        </div>
+
+        <div class="comm-teams-header">
+          <span>فرق العمل التخصصية:</span>
+          <span>5 فرق</span>
+        </div>
+
+        <div class="teams-vertical-list">
+          <div class="team-item-box">
+            <strong>1. اكتشاف المواهب</strong>
+            <p>تنظيم تجارب الأداء واستقبال الترشيحات وبناء السجل الفني للمواهب.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>2. التدريب والتطوير الفني</strong>
+            <p>تحديد الاحتياجات وصقل المهارات عبر تمارين تدريبية وورش متخصصة.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>3. المسرح والأداء</strong>
+            <p>إعداد العروض المسرحية والإلقائية وإدارة البروفات وتوزيع الأدوار.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>4. الفنون البصرية والإبداعية</strong>
+            <p>تنظيم معارض الرسم والخط العربي والأعمال اليدوية ودعم المبتكرين.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>5. المسابقات والمشاركات</strong>
+            <p>إدارة لجان التحكيم للمنافسات الداخلية وترشيح المتميزين للمحافل.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 4: العلاقات العامة والشركات -->
+      <article class="comm-col-card c-pr">
+        <div class="comm-card-head">
+          <div class="comm-icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <div class="comm-card-title">
+            <h3>لجنة العلاقات العامة والشركات</h3>
+          </div>
+        </div>
+
+        <div class="comm-vision-snippet">
+          <strong>الرؤية:</strong> بناء شبكة علاقات وشراكات مؤسسية فاعلة تعزز موارد وفرص وحدة الأنشطة الطلابية.
+        </div>
+
+        <div class="comm-teams-header">
+          <span>فرق العمل التخصصية:</span>
+          <span>4 فرق</span>
+        </div>
+
+        <div class="teams-vertical-list">
+          <div class="team-item-box">
+            <strong>1. العلاقات والشراكات</strong>
+            <p>حصر وتحديث قاعدة بيانات الجهات وصياغة مذكرات التعاون والتفاهم.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>2. الشركات والرعايات</strong>
+            <p>إعداد ملفات الرعاية المعتمدة والتواصل مع الرعاة ومتابعة المزايا.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>3. المراسم والضيوف</strong>
+            <p>إعداد قوائم الضيوف وتنظيم الاستقبال والبروتوكول للزيارات الرسمية.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>4. المتابعة والتوثيق المؤسسي</strong>
+            <p>أرشفة الاتفاقيات ومتابعة تنفيذ الالتزامات وإصدار التقارير الدورية.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 5: الدعم اللوجستي والتنظيم -->
+      <article class="comm-col-card c-logistics">
+        <div class="comm-card-head">
+          <div class="comm-icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </div>
+          <div class="comm-card-title">
+            <h3>لجنة الدعم اللوجستي والتنظيم</h3>
+          </div>
+        </div>
+
+        <div class="comm-vision-snippet">
+          <strong>الرؤية:</strong> تقديم الدعم الميداني والتنظيمي لكافة الفعاليات بأعلى معايير الانسيابية والسلامة.
+        </div>
+
+        <div class="comm-teams-header">
+          <span>فرق العمل التخصصية:</span>
+          <span>5 فرق</span>
+        </div>
+
+        <div class="teams-vertical-list">
+          <div class="team-item-box">
+            <strong>1. التجهيزات والمواقع</strong>
+            <p>تأمين الاحتياجات الميدانية وإعداد قوائم الجاهزية واستلام المواقع.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>2. التنظيم الميداني</strong>
+            <p>تحديد مسارات الحركة وتوزيع المنظمين وضبط الانضباط بالفعاليات.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>3. إدارة الحشود</strong>
+            <p>تنظيم الطوابير والمداخل والمخارج ومنع التكدس وانسيابية الحركة.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>4. السلامة التنفيذية</strong>
+            <p>مراقبة خلو مخارج الطوارئ وتطبيق تعليمات وإجراءات السلامة العامة.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>5. المتطوعين والتنظيم</strong>
+            <p>استقطاب وتأهيل المتطوعين وعقد الإحاطات التوجيهية الميدانية.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 6: الزراعة والمسطحات الخضراء -->
+      <article class="comm-col-card c-agriculture">
+        <div class="comm-card-head">
+          <div class="comm-icon-wrapper">
+            <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+          </div>
+          <div class="comm-card-title">
+            <h3>لجنة الزراعة والمسطحات الخضراء</h3>
+          </div>
+        </div>
+
+        <div class="comm-vision-snippet">
+          <strong>الرؤية:</strong> تعزيز جودة الحياة في الإسكان الطلابي عبر بيئة خضراء جاذبة ومبادرات طلابية مستدامة.
+        </div>
+
+        <div class="comm-teams-header">
+          <span>فرق العمل التخصصية:</span>
+          <span>4 فرق</span>
+        </div>
+
+        <div class="teams-vertical-list">
+          <div class="team-item-box">
+            <strong>1. التشجير والزراعة</strong>
+            <p>تحديد المواقع وتنفيذ أيام الزراعة الطلابية وتنمية الغطاء النباتي.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>2. العناية بالمسطحات</strong>
+            <p>رصد حالة النباتات والمسطحات وتقديم العناية ورفع طلبات الصيانة.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>3. المبادرات البيئية</strong>
+            <p>إطلاق مبادرات ترشيد المياه وإعادة التدوير ونشر الثقافة الخضراء.</p>
+          </div>
+          <div class="team-item-box">
+            <strong>4. التدريب والورش الزراعية</strong>
+            <p>تنظيم ورش تطبيقية في الزراعة المنزلية والعناية بالنباتات الداخلية.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bottom Institutional Values Bar -->
+    <footer class="poster-bottom-bar">
+      <div class="values-row">
+        <span style="font-weight: 700; color: var(--ksu-blue);">القيم المؤسسية:</span>
+        <span class="val-item">1. الانضباط والمسؤولية</span>
+        <span class="val-item">2. العمل الجماعي والتكامل</span>
+        <span class="val-item">3. الجودة والاحترافية</span>
+        <span class="val-item">4. المبادرة والإبداع</span>
+        <span class="val-item">5. الشفافية والمساءلة</span>
+        <span class="val-item">6. التطوير المستمر</span>
+        <span class="val-item">7. خدمة الطالب والجامعة</span>
+      </div>
+
+      <div style="font-family: var(--font-accent); font-weight: 600; color: var(--text-muted);">
+        إدارة الإسكان الطلابي — جامعة الملك سعود • التواصل: 0118063549 | aalznnan@ksu.edu.sa
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    if (window.self !== window.top) {
+      document.body.classList.add('is-embedded');
+    }
+  </script>
+</body>
+</html>

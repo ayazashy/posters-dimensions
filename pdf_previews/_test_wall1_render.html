@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الجدارية الأساسية (320 × 120 سم) - الهيكل التنظيمي الشامل | وحدة الأنشطة الطلابية</title>
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+@page {
+  size: 3200mm 1200mm;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 3200mm;
+  height: 1200mm;
+  background: #ffffff;
+  direction: rtl;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  overflow: hidden;
+  color: #0f172a;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.floating-action-bar { display: none !important; }
+
+.poster-container {
+  width: 3200mm;
+  height: 1200mm;
+  padding: 24mm 38mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Luxury Architectural Frame */
+.architectural-frame {
+  position: absolute;
+  inset: 12mm;
+  border: 1.5mm solid rgba(197, 155, 39, 0.4);
+  pointer-events: none;
+  border-radius: 8mm;
+}
+.corner-tr {
+  position: absolute;
+  top: -2mm;
+  right: -2mm;
+  width: 25mm;
+  height: 25mm;
+  border-top: 4mm solid #c59b27;
+  border-right: 4mm solid #c59b27;
+}
+.corner-bl {
+  position: absolute;
+  bottom: -2mm;
+  left: -2mm;
+  width: 25mm;
+  height: 25mm;
+  border-bottom: 4mm solid #003366;
+  border-left: 4mm solid #003366;
+}
+
+/* Header */
+.poster-hero-header {
+  height: 130mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5mm solid rgba(0, 51, 102, 0.12);
+  padding-bottom: 12mm;
+  flex-shrink: 0;
+}
+
+.hero-identity-cluster {
+  display: flex;
+  align-items: center;
+  gap: 22mm;
+}
+
+.hero-logo-box {
+  width: 120mm;
+  height: 120mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12mm;
+  border: 1mm solid rgba(197, 155, 39, 0.3);
+  box-shadow: 0 4mm 15mm rgba(0, 34, 68, 0.06);
+  padding: 6mm;
+}
+.hero-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.hero-text-block h1 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 40mm;
+  font-weight: 900;
+  color: #002244;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+  gap: 16mm;
+}
+
+.hero-gold-badge {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15mm;
+  font-weight: 800;
+  background: linear-gradient(135deg, #c59b27, #e6b839);
+  color: #ffffff;
+  padding: 3mm 12mm;
+  border-radius: 6mm;
+  vertical-align: middle;
+}
+
+.hero-text-block p {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 15mm;
+  font-weight: 600;
+  color: #64748b;
+  margin-top: 4mm;
+  display: flex;
+  align-items: center;
+  gap: 8mm;
+}
+.hero-dot-separator {
+  color: #c59b27;
+  font-size: 10mm;
+}
+
+.hero-meta-shield {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4mm;
+}
+.meta-spec-tag {
+  background: #f0f6fa;
+  border: 1mm solid rgba(0, 51, 102, 0.2);
+  color: #003366;
+  font-family: 'Cairo', sans-serif;
+  font-size: 15mm;
+  font-weight: 800;
+  padding: 4mm 14mm;
+  border-radius: 6mm;
+  display: flex;
+  align-items: center;
+  gap: 6mm;
+}
+.meta-spec-tag svg {
+  width: 14mm;
+  height: 14mm;
+  fill: currentColor;
+}
+.meta-sub-tag {
+  font-size: 12mm;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* Charter Bar */
+.executive-charter-bar {
+  height: 65mm;
+  background: #f8fafc;
+  border: 1mm solid #e2e8f0;
+  border-right: 5mm solid #c59b27;
+  border-radius: 8mm;
+  padding: 8mm 20mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10mm 0;
+  flex-shrink: 0;
+}
+
+.charter-pillar-left {
+  display: flex;
+  align-items: center;
+  gap: 14mm;
+}
+.charter-icon-emblem {
+  width: 44mm;
+  height: 44mm;
+  background: #003366;
+  color: #c59b27;
+  border-radius: 8mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charter-icon-emblem svg {
+  width: 24mm;
+  height: 24mm;
+  fill: currentColor;
+}
+.charter-pillar-left h3 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18mm;
+  font-weight: 800;
+  color: #002244;
+}
+.charter-pillar-left span {
+  font-size: 13mm;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 2mm;
+  display: block;
+}
+
+.charter-stats-row {
+  display: flex;
+  align-items: center;
+  gap: 16mm;
+}
+.stat-chip {
+  display: flex;
+  align-items: baseline;
+  gap: 6mm;
+}
+.stat-chip strong {
+  font-family: 'Cairo', sans-serif;
+  font-size: 30mm;
+  font-weight: 900;
+  color: #003366;
+  line-height: 1;
+}
+.stat-chip span {
+  font-size: 14mm;
+  font-weight: 700;
+  color: #475569;
+}
+.stat-divider {
+  width: 1mm;
+  height: 30mm;
+  background: #cbd5e1;
+}
+
+/* Committees Master Grid */
+.committees-master-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16mm;
+  min-height: 0;
+}
+
+.comm-panel {
+  background: #ffffff;
+  border: 1.2mm solid #e2e8f0;
+  border-top: 4.5mm solid var(--comm-theme, #003366);
+  border-radius: 10mm;
+  padding: 12mm 16mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4mm 15mm rgba(0, 34, 68, 0.04);
+}
+
+.comm-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8mm;
+  border-bottom: 0.8mm solid #f1f5f9;
+}
+.comm-panel-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10mm;
+}
+.comm-panel-icon {
+  width: 36mm;
+  height: 36mm;
+  border-radius: 8mm;
+  background: var(--comm-bg, #f0f9ff);
+  border: 1mm solid var(--comm-border, #bae6fd);
+  color: var(--comm-theme, #0284c7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comm-panel-icon svg {
+  width: 22mm;
+  height: 22mm;
+  fill: currentColor;
+}
+.comm-panel-titles h2 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 21mm;
+  font-weight: 800;
+  color: #002244;
+  line-height: 1.2;
+}
+.comm-panel-titles span {
+  font-size: 12mm;
+  font-weight: 600;
+  color: #64748b;
+  display: block;
+  margin-top: 1mm;
+}
+.comm-num-monogram {
+  font-family: 'Cairo', sans-serif;
+  font-size: 28mm;
+  font-weight: 900;
+  color: rgba(0, 34, 68, 0.12);
+  line-height: 1;
+}
+
+.comm-mandate-box {
+  background: var(--comm-bg, #f8fafc);
+  border: 0.8mm solid var(--comm-border, #e2e8f0);
+  border-radius: 6mm;
+  padding: 6mm 10mm;
+  font-size: 12mm;
+  color: #334155;
+  line-height: 1.45;
+  margin: 6mm 0;
+  font-weight: 500;
+}
+
+.comm-teams-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12mm;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 6mm;
+}
+
+.teams-flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130mm, 1fr));
+  gap: 6mm;
+  flex: 1;
+}
+
+.team-structural-chip {
+  background: #f8fafc;
+  border: 0.8mm solid #e2e8f0;
+  border-radius: 6mm;
+  padding: 5mm 8mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2mm;
+}
+.team-chip-info {
+  display: flex;
+  align-items: center;
+  gap: 4mm;
+}
+.team-node-dot {
+  width: 4mm;
+  height: 4mm;
+  border-radius: 50%;
+  background: var(--comm-theme, #003366);
+}
+.team-name {
+  font-family: 'Cairo', sans-serif;
+  font-size: 12.5mm;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+}
+.team-desc {
+  font-size: 10.5mm;
+  color: #64748b;
+  font-weight: 500;
+  padding-right: 8mm;
+  line-height: 1.25;
+}
+
+/* Footer */
+.poster-hero-footer {
+  height: 50mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.2mm solid rgba(0, 51, 102, 0.12);
+  padding-top: 8mm;
+  flex-shrink: 0;
+}
+.footer-values-strip {
+  display: flex;
+  align-items: center;
+  gap: 6mm;
+}
+.footer-values-label {
+  font-family: 'Cairo', sans-serif;
+  font-size: 13mm;
+  font-weight: 800;
+  color: #003366;
+}
+.footer-values-chips {
+  display: flex;
+  gap: 5mm;
+}
+.value-jewel-chip {
+  background: #f1f5f9;
+  border: 0.8mm solid rgba(197, 155, 39, 0.3);
+  color: #0f172a;
+  font-size: 11.5mm;
+  font-weight: 600;
+  padding: 3mm 8mm;
+  border-radius: 5mm;
+}
+.footer-official-rights {
+  font-size: 11.5mm;
+  color: #64748b;
+  font-weight: 600;
+}
+</style>
+
+  <style>
+    /* ====================================================
+       WALL 1: 320 cm × 120 cm  (8:3 = 2.667:1)
+       ====================================================  */
+    @page {
+      size: 3200mm 1200mm;
+      margin: 0;
+    }
+
+    /* Screen preview: maintain correct aspect ratio */
+    .poster-container {
+      aspect-ratio: 320 / 120;
+      min-height: 600px;
+    }
+
+    /* PRINT: html & body must match the @page size exactly.
+       This makes 1vw = 32mm, 1vh = 12mm — all vw/vh units
+       in poster_white.css @media print then scale correctly. */
+    @media print {
+      html {
+        width: 3200mm !important;
+        height: 1200mm !important;
+        overflow: hidden !important;
+      }
+      body {
+        width: 3200mm !important;
+        height: 1200mm !important;
+        overflow: hidden !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Navigation Toolbar for Standalone Review & Direct Print -->
+  <aside class="floating-action-bar">
+    <a href="index.html" style="color: var(--ksu-blue); display: flex; align-items: center; gap: 6px;">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      لوحة الاستعراض الشاملة
+    </a>
+    <span style="color: var(--border-card);">|</span>
+    <a href="design2_external.html" style="color: var(--text-secondary);">الجدارية الخارجية (275 سم)</a>
+    <span style="color: var(--border-card);">|</span>
+    <a href="design3_gateway.html" style="color: var(--text-secondary);">الجدارية الثالثة (138 سم)</a>
+    <span style="color: var(--border-card);">|</span>
+    <button class="btn-floating-print" onclick="window.print()">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+      طباعة الجدارية (Print 1:1)
+    </button>
+  </aside>
+
+  <!-- Master Canvas (320 cm x 120 cm) -->
+  <main class="poster-container">
+
+    <!-- Architectural Framing & Corner Accents -->
+    <div class="architectural-frame">
+      <div class="corner-tr"></div>
+      <div class="corner-bl"></div>
+    </div>
+    <div class="bg-watermark-grid"></div>
+
+    <!-- Sovereign Header -->
+    <header class="poster-hero-header">
+      <div class="hero-identity-cluster">
+        <div class="hero-logo-box">
+          <img src="assets/housing_logo.png" alt="شعار إدارة الإسكان الطلابي - جامعة الملك سعود">
+        </div>
+        <div class="hero-text-block">
+          <h1>
+            الهيكل التنظيمي والتشغيلي لوحدة الأنشطة الطلابية
+            <span class="hero-gold-badge">الإصدار المعتمد 1448هـ</span>
+          </h1>
+          <p>
+            <span>جامعة الملك سعود</span>
+            <span class="hero-dot-separator">◆</span>
+            <span>عمادة شؤون الطلاب</span>
+            <span class="hero-dot-separator">◆</span>
+            <span>إدارة الإسكان الطلابي</span>
+            <span class="hero-dot-separator">◆</span>
+            <span>وحدة الأنشطة الطلابية</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-meta-shield">
+        <div class="meta-spec-tag">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg>
+          الجدارية الأساسية • 320 × 120 سم
+        </div>
+        <div class="meta-sub-tag">الموقع المعماري: الصالة الداخلية الرئيسية لوحدة الأنشطة</div>
+      </div>
+    </header>
+
+    <!-- Master Executive Charter Bar -->
+    <section class="executive-charter-bar">
+      <div class="charter-pillar-left">
+        <div class="charter-icon-emblem">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/></svg>
+        </div>
+        <div>
+          <h3>مجلس الإشراف والتنسيق المؤسسي لوحدة الأنشطة الطلابية</h3>
+          <span>منظومة متكاملة لدعم وتمكين القيادات الطلابية ورعاية الإبداع وبناء بيئة سكنية نوعية</span>
+        </div>
+      </div>
+
+      <div class="charter-stats-row">
+        <div class="stat-chip">
+          <strong>6</strong>
+          <span>لجان تخصصية</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-chip">
+          <strong>27</strong>
+          <span>فريق عمل نوعي</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-chip">
+          <strong>100%</strong>
+          <span>قيادة وتمكين طلابي</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 Committees 3x2 Master Architectural Grid -->
+    <div class="committees-master-grid">
+
+      <!-- Committee 1: الابتكار والتطوير التقني -->
+      <article class="comm-panel" style="--comm-theme: var(--c-tech-color); --comm-bg: var(--c-tech-bg); --comm-border: var(--c-tech-border);">
+        <header class="comm-panel-header">
+          <div class="comm-panel-title-group">
+            <div class="comm-panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 7V4h-3V2h-2v2h-6V2H7v2H4v3H2v2h2v6H2v2h2v3h3v2h2v-2h6v2h2v-2h3v-3h2v-2h-2V9h2V7h-2zm-2 10H6V7h12v10zm-7-2h2v-2h2v-2h-2V9h-2v2H9v2h2z"/></svg>
+            </div>
+            <div class="comm-panel-titles">
+              <h2>لجنة الابتكار والتطوير التقني</h2>
+              <span>التحول الرقمي والحلول الذكية للإسكان</span>
+            </div>
+          </div>
+          <div class="comm-num-monogram">01</div>
+        </header>
+
+        <div class="comm-mandate-box">
+          بناء بيئة طلابية تقنية محفزة تسهم في التحول الرقمي وابتكار حلول برمجية ذكية لخدمة الساكنين.
+        </div>
+
+        <div class="comm-teams-label">
+          <span>الفرق المتخصصة التابعة</span>
+          <span style="color: var(--text-muted); font-size: 11px;">5 فرق تنفيذية</span>
+        </div>
+
+        <div class="teams-flex-container">
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق الابتكار والحلول</span>
+            </div>
+            <span class="team-desc">ابتكار الحلول الرقمية الذكية</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق البرمجة والتطبيقات</span>
+            </div>
+            <span class="team-desc">تطوير وصيانة المنصات والتطبيقات</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق الذكاء الاصطناعي</span>
+            </div>
+            <span class="team-desc">توظيف تقنيات AI وأتمتة العمليات</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق الدعم الفني</span>
+            </div>
+            <span class="team-desc">مساندة الساكنين وصيانة البنية التقنية</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التدريب والورش</span>
+            </div>
+            <span class="team-desc">المعسكرات البرمجية والتدريب التقني</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 2: الإعلام -->
+      <article class="comm-panel" style="--comm-theme: var(--c-media-color); --comm-bg: var(--c-media-bg); --comm-border: var(--c-media-border);">
+        <header class="comm-panel-header">
+          <div class="comm-panel-title-group">
+            <div class="comm-panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+            </div>
+            <div class="comm-panel-titles">
+              <h2>لجنة الإعلام</h2>
+              <span>صناعة المحتوى والتوثيق والإنتاج المرئي</span>
+            </div>
+          </div>
+          <div class="comm-num-monogram">02</div>
+        </header>
+
+        <div class="comm-mandate-box">
+          تعزيز حضور أنشطة الإسكان إعلامياً بصناعة محتوى احترافي وتوثيق مرئي نوعي لكافة المبادرات.
+        </div>
+
+        <div class="comm-teams-label">
+          <span>الفرق المتخصصة التابعة</span>
+          <span style="color: var(--text-muted); font-size: 11px;">5 فرق تنفيذية</span>
+        </div>
+
+        <div class="teams-flex-container">
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التحرير والمحتوى</span>
+            </div>
+            <span class="team-desc">التحرير الصحفي وصياغة الرسائل</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التصوير والتوثيق</span>
+            </div>
+            <span class="team-desc">التغطية الفوتوغرافية والفيديو النوعي</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التصميم والهوية</span>
+            </div>
+            <span class="team-desc">تصميم البوسترات والرسومات الرقمية</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المونتاج والإنتاج</span>
+            </div>
+            <span class="team-desc">المونتاج والموشن جرافيك والمؤثرات</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق النشر وإدارة القنوات</span>
+            </div>
+            <span class="team-desc">إدارة منصات التواصل والجدولة الرقمية</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 3: المواهب والفنون -->
+      <article class="comm-panel" style="--comm-theme: var(--c-talent-color); --comm-bg: var(--c-talent-bg); --comm-border: var(--c-talent-border);">
+        <header class="comm-panel-header">
+          <div class="comm-panel-title-group">
+            <div class="comm-panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3l2.09 6.26L20.67 9.8l-4.7 3.96 1.5 6.43L12 16.5l-5.47 3.69 1.5-6.43-4.7-3.96 6.58-.54L12 3z"/></svg>
+            </div>
+            <div class="comm-panel-titles">
+              <h2>لجنة المواهب والفنون</h2>
+              <span>حاضنة الإبداع الطلابي والفنون البصرية والمسرحية</span>
+            </div>
+          </div>
+          <div class="comm-num-monogram">03</div>
+        </header>
+
+        <div class="comm-mandate-box">
+          بيئة حاضنة لاكتشاف وتنمية المواهب وإبراز الإبداع الفني والثقافي والمسرحي لطلاب السكن.
+        </div>
+
+        <div class="comm-teams-label">
+          <span>الفرق المتخصصة التابعة</span>
+          <span style="color: var(--text-muted); font-size: 11px;">5 فرق تنفيذية</span>
+        </div>
+
+        <div class="teams-flex-container">
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق اكتشاف المواهب</span>
+            </div>
+            <span class="team-desc">استكشاف واستقطاب المبدعين والملهمين</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التدريب والتطوير</span>
+            </div>
+            <span class="team-desc">صقل المواهب بالدورات التخصصية</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المسرح والأداء</span>
+            </div>
+            <span class="team-desc">العروض المسرحية وفنون الإلقاء والأدب</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق الفنون البصرية</span>
+            </div>
+            <span class="team-desc">معارض الرسم والخط العربي والأشغال</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المسابقات والمشاركات</span>
+            </div>
+            <span class="team-desc">المنافسات الثقافية والتمثيل بالملتقيات</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 4: العلاقات العامة والشركات -->
+      <article class="comm-panel" style="--comm-theme: var(--c-pr-color); --comm-bg: var(--c-pr-bg); --comm-border: var(--c-pr-border);">
+        <header class="comm-panel-header">
+          <div class="comm-panel-title-group">
+            <div class="comm-panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="comm-panel-titles">
+              <h2>لجنة العلاقات العامة والشركات</h2>
+              <span>بناء الشراكات المؤسسية والمراسم والرعايات</span>
+            </div>
+          </div>
+          <div class="comm-num-monogram">04</div>
+        </header>
+
+        <div class="comm-mandate-box">
+          بناء شبكة علاقات وشراكات مؤسسية فاعلة تعزز موارد وفرص وحدة الأنشطة وتخدم الساكنين.
+        </div>
+
+        <div class="comm-teams-label">
+          <span>الفرق المتخصصة التابعة</span>
+          <span style="color: var(--text-muted); font-size: 11px;">4 فرق تنفيذية</span>
+        </div>
+
+        <div class="teams-flex-container">
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق العلاقات والشراكات</span>
+            </div>
+            <span class="team-desc">توطيد التعاون مع كليات وقطاعات الجامعة</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق الشركات والرعايات</span>
+            </div>
+            <span class="team-desc">استقطاب الرعاة وتوفير الموارد الداعمة</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المراسم والضيوف</span>
+            </div>
+            <span class="team-desc">استقبال كبار الزوار والبروتوكول الرسمي</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المتابعة والتوثيق</span>
+            </div>
+            <span class="team-desc">إعداد التقارير وأرشفة الاتفاقيات والعقود</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 5: الدعم اللوجستي والتنظيم -->
+      <article class="comm-panel" style="--comm-theme: var(--c-logistics-color); --comm-bg: var(--c-logistics-bg); --comm-border: var(--c-logistics-border);">
+        <header class="comm-panel-header">
+          <div class="comm-panel-title-group">
+            <div class="comm-panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+            </div>
+            <div class="comm-panel-titles">
+              <h2>لجنة الدعم اللوجستي والتنظيم</h2>
+              <span>العمليات الميدانية وإدارة الحشود والسلامة</span>
+            </div>
+          </div>
+          <div class="comm-num-monogram">05</div>
+        </header>
+
+        <div class="comm-mandate-box">
+          تقديم الدعم الميداني والتنظيمي الاحترافي بأعلى معايير الانسيابية والسلامة والجاهزية.
+        </div>
+
+        <div class="comm-teams-label">
+          <span>الفرق المتخصصة التابعة</span>
+          <span style="color: var(--text-muted); font-size: 11px;">5 فرق تنفيذية</span>
+        </div>
+
+        <div class="teams-flex-container">
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التجهيزات والمواقع</span>
+            </div>
+            <span class="team-desc">تهيئة المسارح والقاعات وتأمين العتاد</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التنظيم الميداني</span>
+            </div>
+            <span class="team-desc">الإشراف الحركي وتنسيق حضور الطلاب</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق إدارة الحشود</span>
+            </div>
+            <span class="team-desc">انسيابية الحركة وتأمين المداخل والمخارج</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق السلامة التنفيذية</span>
+            </div>
+            <span class="team-desc">تطبيق اشتراطات الأمان والاستجابة السريعة</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المتطوعين</span>
+            </div>
+            <span class="team-desc">توجيه المتطوعين واعتماد الساعات التطوعية</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Committee 6: الزراعة والمسطحات الخضراء -->
+      <article class="comm-panel" style="--comm-theme: var(--c-agriculture-color); --comm-bg: var(--c-agriculture-bg); --comm-border: var(--c-agriculture-border);">
+        <header class="comm-panel-header">
+          <div class="comm-panel-title-group">
+            <div class="comm-panel-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.65 10.57 20 12 20c4.97 0 9-4.03 9-9 0-4.97-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6 0-1.66.67-3.16 1.76-4.24l8.48 8.48C15.16 17.33 13.66 18 12 18z"/></svg>
+            </div>
+            <div class="comm-panel-titles">
+              <h2>لجنة الزراعة والمسطحات الخضراء</h2>
+              <span>الاستدامة البيئية وجودة الحياة وتجميل السكن</span>
+            </div>
+          </div>
+          <div class="comm-num-monogram">06</div>
+        </header>
+
+        <div class="comm-mandate-box">
+          تعزيز جودة الحياة في الإسكان عبر بيئة خضراء جاذبة ومبادرات بيئية مستدامة يشارك بها الطلاب.
+        </div>
+
+        <div class="comm-teams-label">
+          <span>الفرق المتخصصة التابعة</span>
+          <span style="color: var(--text-muted); font-size: 11px;">4 فرق تنفيذية</span>
+        </div>
+
+        <div class="teams-flex-container">
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التشجير والزراعة</span>
+            </div>
+            <span class="team-desc">غرس الأشجار الملائمة وتوسيع الغطاء النباتي</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق العناية بالمسطحات</span>
+            </div>
+            <span class="team-desc">متابعة الري والتسميد الدوري للحدائق</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق المبادرات البيئية</span>
+            </div>
+            <span class="team-desc">حملات إعادة التدوير وترشيد الموارد الطبيعية</span>
+          </div>
+          <div class="team-structural-chip">
+            <div class="team-chip-info">
+              <div class="team-node-dot"></div>
+              <span class="team-name">فريق التدريب والورش</span>
+            </div>
+            <span class="team-desc">ورش الزراعة العضوية والممارسات الخضراء</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Sovereign Footer -->
+    <footer class="poster-hero-footer">
+      <div class="footer-values-track">
+        <span class="footer-values-label">القيم المؤسسية الراسخة:</span>
+        <div class="value-jewel-chip"><span class="dot">◆</span>الريادة والتميز</div>
+        <div class="value-jewel-chip"><span class="dot">◆</span>العمل بروح الفريق</div>
+        <div class="value-jewel-chip"><span class="dot">◆</span>الابتكار المستمر</div>
+        <div class="value-jewel-chip"><span class="dot">◆</span>المسؤولية والأمانة</div>
+        <div class="value-jewel-chip"><span class="dot">◆</span>الاستدامة والأثر</div>
+        <div class="value-jewel-chip"><span class="dot">◆</span>الاحترافية والتنظيم</div>
+        <div class="value-jewel-chip"><span class="dot">◆</span>التمكين الطلابي</div>
+      </div>
+
+      <div class="footer-official-rights">
+        جميع الحقوق محفوظة © وحدة الأنشطة الطلابية — إدارة الإسكان الطلابي — جامعة الملك سعود 1448هـ
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>

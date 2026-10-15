@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استوديو جداريات وحدة الأنشطة الطلابية | إدارة الإسكان الطلابي - جامعة الملك سعود</title>
+  <link rel="stylesheet" href="css/poster_white.css">
+  <style>
+    body {
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .studio-navbar {
+      background-color: #ffffff;
+      border-bottom: 2px solid var(--border-hairline);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 34, 68, 0.04);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .studio-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .studio-brand img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+    }
+
+    .studio-brand-titles h1 {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ksu-blue-deep);
+      line-height: 1.2;
+    }
+
+    .studio-brand-titles p {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .wall-selector-tabs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f1f5f9;
+      padding: 5px;
+      border-radius: 12px;
+    }
+
+    .tab-btn {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: var(--ksu-blue-deep);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .tab-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .studio-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .pdf-download-btn {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 800;
+      background: var(--gold-metallic);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 8px rgba(197, 155, 39, 0.25);
+      transition: background 0.2s ease;
+    }
+
+    .pdf-download-btn:hover {
+      background: var(--gold-deep);
+    }
+
+    .studio-main-viewport {
+      flex: 1;
+      padding: 24px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wall-info-banner {
+      width: 100%;
+      max-width: 1920px;
+      background: #ffffff;
+      border: 1px solid var(--border-gold-hairline);
+      border-radius: 14px;
+      padding: 14px 28px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 34, 68, 0.03);
+    }
+
+    .wall-title-area h2 {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--ksu-blue-deep);
+    }
+
+    .wall-title-area p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .wall-specs-chips {
+      display: flex;
+      gap: 12px;
+    }
+
+    .spec-chip {
+      background: var(--ksu-blue-soft);
+      border: 1px solid rgba(0, 51, 102, 0.15);
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ksu-blue);
+    }
+
+    .iframe-stage-wrapper {
+      width: 100%;
+      max-width: 1920px;
+      background: #ffffff;
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 34, 68, 0.08);
+      overflow: hidden;
+      position: relative;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Studio Navigation Bar -->
+  <header class="studio-navbar">
+    <div class="studio-brand">
+      <img src="assets/housing_logo.png" alt="شعار إدارة الإسكان الطلابي">
+      <div class="studio-brand-titles">
+        <h1>استوديو جداريات وحدة الأنشطة الطلابية</h1>
+        <p>إدارة الإسكان الطلابي — عمادة شؤون الطلاب — جامعة الملك سعود (الإصدار المعماري المعتمد 1448هـ)</p>
+      </div>
+    </div>
+
+    <!-- Wall Selection Tabs -->
+    <nav class="wall-selector-tabs">
+      <button class="tab-btn active" onclick="switchWall(1)">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg>
+        الجدارية 1: الأساسية (320 × 120 سم)
+      </button>
+      <button class="tab-btn" onclick="switchWall(2)">
+        <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+        الجدارية 2: الخارجية (275 × 120 سم)
+      </button>
+      <button class="tab-btn" onclick="switchWall(3)">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        الجدارية 3: البوابة (138 × 120 سم)
+      </button>
+    </nav>
+
+    <!-- Studio Action Links -->
+    <div class="studio-actions">
+      <a id="downloadPdfBtn" class="pdf-download-btn" href="wall1_320x120.pdf" download="الجدارية_الأساسية_320x120.pdf">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        تحميل ملف PDF للطباعة (1:1)
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Viewport -->
+  <main class="studio-main-viewport">
+    
+    <!-- Info Banner -->
+    <div class="wall-info-banner">
+      <div class="wall-title-area">
+        <h2 id="wallHeading">الجدارية الأساسية (320 × 120 سم) - الهيكل التنظيمي والتشغيلي الشامل</h2>
+        <p id="wallDesc">استعراض الهيكل الشامل لوحدة الأنشطة الطلابية، واللجان الست المتخصصة، والفرق الـ 27، مع القيم المؤسسية الراسخة.</p>
+      </div>
+      <div class="wall-specs-chips">
+        <div class="spec-chip" id="chipDim">المقاس: 3200 مم × 1200 مم</div>
+        <div class="spec-chip" id="chipRatio">النسبة: 2.67:1 (8:3)</div>
+        <div class="spec-chip" id="chipLoc">الموقع: الجدار الداخلي الرئيسي</div>
+      </div>
+    </div>
+
+    <!-- Interactive Iframe Display Stage -->
+    <div class="iframe-stage-wrapper">
+      <iframe id="wallFrame" src="design1_main.html" style="height: 720px;"></iframe>
+    </div>
+
+  </main>
+
+  <script>
+    const wallsData = {
+      1: {
+        title: "الجدارية الأساسية (320 × 120 سم) - الهيكل التنظيمي والتشغيلي الشامل",
+        desc: "استعراض الهيكل الشامل لوحدة الأنشطة الطلابية، واللجان الست المتخصصة، والفرق الـ 27، مع القيم المؤسسية الراسخة.",
+        dim: "المقاس: 3200 مم × 1200 مم (320 × 120 سم)",
+        ratio: "النسبة: 2.67:1 (8:3)",
+        loc: "الموقع: الجدار الداخلي الرئيسي للوحدة",
+        src: "design1_main.html",
+        pdf: "wall1_320x120.pdf",
+        pdfName: "الجدارية_الأساسية_320x120.pdf",
+        height: 720
+      },
+      2: {
+        title: "الجدارية الثانية (275 × 120 سم) - مجالات الأنشطة ومصفوفة المكاسب وبوابة الانضمام",
+        desc: "جدارية إعلانية وإرشادية في ممر السكن، تبرز مجالات الإبداع، مميزات الانضمام، وبوابة التسجيل الفوري عبر الـ QR Code.",
+        dim: "المقاس: 2750 مم × 1200 مم (275 × 120 سم)",
+        ratio: "النسبة: 2.29:1 (55:24)",
+        loc: "الموقع: الممر الخارجي لحركة الطلاب بالسكن",
+        src: "design2_external.html",
+        pdf: "wall2_275x120.pdf",
+        pdfName: "الجدارية_الخارجية_275x120.pdf",
+        height: 750
+      },
+      3: {
+        title: "الجدارية الثالثة (138 × 120 سم) - هوية الوحدة وشجرة القيم وبوابة الترشح السريع",
+        desc: "جدارية مدمجة لمدخل الوحدة، تجسد الهوية المؤسسية الصريحة، شجرة القيم السبع، ورمز الاستجابة السريعة للانضمام والترشح.",
+        dim: "المقاس: 1380 مم × 1200 مم (138 × 120 سم)",
+        ratio: "النسبة: 1.15:1 (23:20)",
+        loc: "الموقع: بهو ومدخل وحدة الأنشطة الطلابية",
+        src: "design3_gateway.html",
+        pdf: "wall3_138x120.pdf",
+        pdfName: "جدارية_البوابة_138x120.pdf",
+        height: 820
+      }
+    };
+
+    function switchWall(id) {
+      document.querySelectorAll('.tab-btn').forEach((btn, idx) => {
+        btn.classList.toggle('active', idx === id - 1);
+      });
+
+      const data = wallsData[id];
+      document.getElementById('wallHeading').textContent = data.title;
+      document.getElementById('wallDesc').textContent = data.desc;
+      document.getElementById('chipDim').textContent = data.dim;
+      document.getElementById('chipRatio').textContent = data.ratio;
+      document.getElementById('chipLoc').textContent = data.loc;
+
+      const frame = document.getElementById('wallFrame');
+      frame.src = data.src;
+      frame.style.height = data.height + 'px';
+
+      const pdfBtn = document.getElementById('downloadPdfBtn');
+      pdfBtn.href = data.pdf;
+      pdfBtn.setAttribute('download', data.pdfName);
+    }
+  </script>
+
+</body>
+</html>

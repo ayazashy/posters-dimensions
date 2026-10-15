@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الجدارية الخارجية (275 × 120 سم) - مجالات الأنشطة ومميزات المشاركة | إسكان جامعة الملك سعود</title>
+  <link rel="stylesheet" href="css/poster_white.css">
+  <style>
+    /* Exact 275cm x 120cm Aspect Ratio (55:24 = 2.292:1) */
+    .poster-container {
+      aspect-ratio: 275 / 120;
+      min-height: 720px;
+    }
+
+    .external-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      padding: 16px 36px;
+      flex: 1;
+      align-items: stretch;
+    }
+
+    /* Committees Showcase 6 Grid */
+    .comm-showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .comm-feature-box {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      border-right: 4px solid var(--feat-color, var(--ksu-blue));
+      position: relative;
+    }
+
+    .comm-feature-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .feat-icon-box {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      background: var(--feat-bg, var(--bg-subtle));
+      color: var(--feat-color, var(--ksu-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feat-icon-box svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .comm-feature-head h4 {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .comm-feature-box p {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .feat-tag {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--feat-color, var(--ksu-blue));
+      margin-top: 4px;
+    }
+
+    /* Recruitment & Value Column */
+    .cta-recruitment-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .lead-banner-white {
+      background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+      border: 2px solid var(--ksu-blue);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .lead-banner-white h2 {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--ksu-blue);
+      margin-bottom: 6px;
+    }
+
+    .lead-banner-white p {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Benefits Grid */
+    .benefits-white-box {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .benefits-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .benefit-card-white {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .benefit-card-white svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--gold-accent);
+      flex-shrink: 0;
+    }
+
+    .benefit-card-white span {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* QR Scan Card */
+    .qr-register-box {
+      background: #ffffff;
+      border: 2px solid var(--gold-accent);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .qr-img-frame {
+      width: 85px;
+      height: 85px;
+      background: #ffffff;
+      border: 1px solid var(--border-medium);
+      border-radius: 8px;
+      padding: 4px;
+      flex-shrink: 0;
+    }
+
+    .qr-img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .qr-details h3 {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--ksu-blue);
+      margin-bottom: 2px;
+    }
+
+    .qr-details p {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .qr-link-text {
+      font-family: var(--font-accent);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Navigation & Print Toolbar -->
+  <aside class="floating-action-bar">
+    <a href="index.html" style="color: var(--ksu-blue); display: flex; align-items: center; gap: 6px;">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      لوحة الاستعراض الشاملة
+    </a>
+    <span style="color: var(--border-medium);">|</span>
+    <a href="design1_main.html" style="color: var(--text-secondary);">الجدارية الأساسية (320 سم)</a>
+    <span style="color: var(--border-medium);">|</span>
+    <a href="design3_gateway.html" style="color: var(--text-secondary);">الجدارية الثالثة (138 سم)</a>
+    <span style="color: var(--border-medium);">|</span>
+    <button class="btn-floating-print" onclick="window.print()">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+      طباعة الجدارية (Print 1:1)
+    </button>
+  </aside>
+
+  <!-- External Poster Canvas (275 cm x 120 cm) -->
+  <main class="poster-container">
+
+    <!-- Top Header -->
+    <header class="poster-top-bar">
+      <div class="branding-group">
+        <div class="branding-logo-box">
+          <img src="assets/housing_logo.png" alt="شعار إدارة الإسكان الطلابي">
+        </div>
+        <div class="branding-titles">
+          <h1>مجالات الأنشطة الطلابية — كن أحد صُنّاع الأثر</h1>
+          <p>جامعة الملك سعود | عمادة شؤون الطلاب | إدارة الإسكان الطلابي — وحدة الأنشطة الطلابية</p>
+        </div>
+      </div>
+
+      <div class="poster-meta-pill">
+        <div class="meta-dim-tag">الجدارية الخارجية • المقاس: 275 × 120 سم</div>
+        <div class="meta-location-tag">الموقع: الجدار الخارجي في ممر الحركة والخدمات بالسكن</div>
+      </div>
+    </header>
+
+    <!-- External Layout -->
+    <div class="external-layout">
+
+      <!-- Column 1: The 6 Committee Domains -->
+      <section style="display: flex; flex-direction: column;">
+        <div style="font-family: var(--font-heading); font-size: 15px; font-weight: 800; color: var(--ksu-blue); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+          <span>🎯 6 لجان تخصصية… اختر المجال الأقرب لاهتمامك وموهبتك:</span>
+          <span style="font-size: 12px; color: var(--text-muted);">27 فريق عمل طلابي</span>
+        </div>
+
+        <div class="comm-showcase-grid">
+
+          <!-- 1. الابتكار والتطوير التقني -->
+          <div class="comm-feature-box" style="--feat-color: var(--color-tech); --feat-bg: var(--color-tech-bg);">
+            <div class="comm-feature-head">
+              <div class="feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M20 7V4h-3V2h-2v2h-6V2H7v2H4v3H2v2h2v6H2v2h2v3h3v2h2v-2h6v2h2v-2h3v-3h2v-2h-2V9h2V7h-2zm-2 10H6V7h12v10zm-7-2h2v-2h2v-2h-2V9h-2v2H9v2h2z"/></svg>
+              </div>
+              <h4>1. الابتكار والتطوير التقني</h4>
+            </div>
+            <p>تطوير المنصات والتطبيقات الذكية، مشاريع الذكاء الاصطناعي، تقديم الدعم الفني للساكنين، والورش التقنية المتخصصة.</p>
+            <div class="feat-tag">برمجة • ذكاء اصطناعي • دعم فني • حلول سكنية</div>
+          </div>
+
+          <!-- 2. لجنة الإعلام -->
+          <div class="comm-feature-box" style="--feat-color: var(--color-media); --feat-bg: var(--color-media-bg);">
+            <div class="comm-feature-head">
+              <div class="feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>
+              </div>
+              <h4>2. لجنة الإعلام</h4>
+            </div>
+            <p>صناعة المحتوى التحريري والتقارير، التغطية الفوتوغرافية والفيديو، التصميم والهوية البصرية، والمونتاج وإدارة القنوات.</p>
+            <div class="feat-tag">تصوير • مونتاج • تحرير إخباري • هوية بصرية</div>
+          </div>
+
+          <!-- 3. المواهب والفنون -->
+          <div class="comm-feature-box" style="--feat-color: var(--color-talent); --feat-bg: var(--color-talent-bg);">
+            <div class="comm-feature-head">
+              <div class="feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.27 19.59 10.58 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-3.5 8c-.83 0-1.5-.67-1.5-1.5S7.67 8 8.5 8s1.5.67 1.5 1.5S9.33 11 8.5 11zm7 0c-.83 0-1.5-.67-1.5-1.5S14.67 8 15.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm-3.5 6.5c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z"/></svg>
+              </div>
+              <h4>3. المواهب والفنون</h4>
+            </div>
+            <p>اكتشاف المواهب الثقافية، المسرح والإلقاء، معارض الفنون التشكيلية والخط العربي، وإدارة المنافسات والمسابقات الطلابية.</p>
+            <div class="feat-tag">مسرح وإلقاء • فنون بصرية • مسابقات • تدريب فني</div>
+          </div>
+
+          <!-- 4. العلاقات العامة والشركات -->
+          <div class="comm-feature-box" style="--feat-color: var(--color-pr); --feat-bg: var(--color-pr-bg);">
+            <div class="comm-feature-head">
+              <div class="feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              </div>
+              <h4>4. العلاقات العامة والشركات</h4>
+            </div>
+            <p>بناء الشراكات المؤسسية، استقطاب الرعايات الداعمة للبرامج، إدارة بروتوكول الضيوف والمراسم، والتوثيق والاتفاقيات.</p>
+            <div class="feat-tag">شراكات • رعايات • علاقات عامة • مراسم وضيوف</div>
+          </div>
+
+          <!-- 5. الدعم اللوجستي والتنظيم -->
+          <div class="comm-feature-box" style="--feat-color: var(--color-logistics); --feat-bg: var(--color-logistics-bg);">
+            <div class="comm-feature-head">
+              <div class="feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+              </div>
+              <h4>5. الدعم اللوجستي والتنظيم</h4>
+            </div>
+            <p>تجهيز مواقع الفعاليات والمسارح، إدارة وتوجيه الحشود، تطبيق معايير السلامة التنفيذية، وإدارة وتأهيل المتطوعين.</p>
+            <div class="feat-tag">إدارة حشود • تجهيزات • سلامة ميدانية • متطوعون</div>
+          </div>
+
+          <!-- 6. الزراعة والمسطحات الخضراء -->
+          <div class="comm-feature-box" style="--feat-color: var(--color-agriculture); --feat-bg: var(--color-agriculture-bg);">
+            <div class="comm-feature-head">
+              <div class="feat-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+              </div>
+              <h4>6. الزراعة والمسطحات الخضراء</h4>
+            </div>
+            <p>مبادرات التشجير وزيادة الغطاء النباتي، العناية بالمساحات الخضراء بالسكن، نشر التوعية البيئية، وترشيد الموارد.</p>
+            <div class="feat-tag">تشجير • استدامة بيئية • مسطحات خضراء • إعادة تدوير</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Column 2: Motivation, Member Benefits & Quick QR Enrollment -->
+      <section class="cta-recruitment-col">
+
+        <!-- Motivational Lead Banner -->
+        <div class="lead-banner-white">
+          <h2>🚀 لا تكتفِ بحضور الأنشطة… كُن أحد صُنّاعها!</h2>
+          <p>
+            لا يشترط أن تكون محترفاً؛ نبحث عن الطالب المبادر، الملتزم، والراغب في التعلم وصناعة الفرق في بيئة الإسكان الطلابي.
+          </p>
+        </div>
+
+        <!-- Member Benefits Grid -->
+        <div class="benefits-white-box">
+          <div style="font-family: var(--font-heading); font-size: 14px; font-weight: 800; color: var(--ksu-blue);">
+            ⭐ مميزات الأعضاء وقادة اللجان الفاعلين:
+          </div>
+
+          <div class="benefits-list">
+            <div class="benefit-card-white">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <span>ساعات تطوعية رسمية</span>
+            </div>
+            <div class="benefit-card-white">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+              <span>شهادة شكر ورصد بالسجل المهاري</span>
+            </div>
+            <div class="benefit-card-white">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>أولوية في الدورات والورش التطبيقية</span>
+            </div>
+            <div class="benefit-card-white">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              <span>برامج متخصصة لإعداد القادة وإدارة الفرق</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- QR Scan Box -->
+        <div class="qr-register-box">
+          <div class="qr-img-frame">
+            <img src="assets/qr_registration.svg" alt="رمز QR للتسجيل">
+          </div>
+          <div class="qr-details">
+            <h3>امسح الكود ورشّح نفسك الآن</h3>
+            <p>انضم لفريق العمل المفضل لديك واصنع تجربة جامعية استثنائية.</p>
+            <div class="qr-link-text">🔗 https://forms.gle/vxAYqhgXkpvEc7GF9</div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <footer class="poster-bottom-bar">
+      <div style="font-weight: 700; color: var(--ksu-blue);">
+        وحدة الأنشطة الطلابية — إدارة الإسكان الطلابي • صُنّاع الأثر والريادة
+      </div>
+      <div style="font-family: var(--font-accent); color: var(--text-muted);">
+        واتساب الاستفسارات: 0118063549 | البريد: aalznnan@ksu.edu.sa
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    if (window.self !== window.top) {
+      document.body.classList.add('is-embedded');
+    }
+  </script>
+</body>
+</html>

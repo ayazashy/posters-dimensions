@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الجدارية الثالثة (138 × 120 سم) - بوابة الهوية والقيادة والترشيح | إسكان جامعة الملك سعود</title>
+  <link rel="stylesheet" href="css/poster_white.css">
+  <style>
+    /* Exact 138cm x 120cm Aspect Ratio (23:20 = 1.150:1) */
+    .poster-container {
+      aspect-ratio: 138 / 120;
+      max-width: 1200px;
+      min-height: 800px;
+    }
+
+    .gateway-body-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 16px 30px;
+      flex: 1;
+      align-items: stretch;
+    }
+
+    .gateway-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* Core Emblem Hero Box */
+    .emblem-hero-white {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .emblem-hero-white .logo-frame {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+    }
+
+    .emblem-hero-white .logo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .emblem-hero-white h2 {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--ksu-blue);
+      line-height: 1.25;
+    }
+
+    .emblem-hero-white p {
+      font-size: 12px;
+      color: var(--gold-dark);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    /* Compact Hierarchy */
+    .compact-tree-box {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+
+    .compact-tree-box h4 {
+      font-family: var(--font-heading);
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ksu-blue);
+      margin-bottom: 8px;
+    }
+
+    .tree-step {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .tree-step::before {
+      content: '◀';
+      color: var(--gold-accent);
+      font-size: 10px;
+    }
+
+    /* Values Grid Compact */
+    .values-compact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .val-chip {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      padding: 5px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* Big QR Portal Box */
+    .qr-hero-card {
+      background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+      border: 2px solid var(--gold-accent);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+      flex: 1;
+      justify-content: center;
+    }
+
+    .qr-large-frame {
+      width: 140px;
+      height: 140px;
+      background: #ffffff;
+      border: 1px solid var(--border-medium);
+      padding: 8px;
+      border-radius: 12px;
+      margin: 12px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .qr-large-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Contact Details White */
+    .contact-card-white {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-item svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Navigation & Print Toolbar -->
+  <aside class="floating-action-bar">
+    <a href="index.html" style="color: var(--ksu-blue); display: flex; align-items: center; gap: 6px;">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      لوحة الاستعراض الشاملة
+    </a>
+    <span style="color: var(--border-medium);">|</span>
+    <a href="design1_main.html" style="color: var(--text-secondary);">الجدارية الأساسية (320 سم)</a>
+    <span style="color: var(--border-medium);">|</span>
+    <a href="design2_external.html" style="color: var(--text-secondary);">الجدارية الخارجية (275 سم)</a>
+    <span style="color: var(--border-medium);">|</span>
+    <button class="btn-floating-print" onclick="window.print()">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+      طباعة الجدارية (Print 1:1)
+    </button>
+  </aside>
+
+  <!-- Gateway Poster Canvas (138 cm x 120 cm) -->
+  <main class="poster-container">
+
+    <!-- Top Header -->
+    <header class="poster-top-bar" style="padding: 16px 30px;">
+      <div class="branding-group">
+        <div class="branding-logo-box" style="width: 55px; height: 55px;">
+          <img src="assets/housing_logo.png" alt="شعار إدارة الإسكان">
+        </div>
+        <div class="branding-titles">
+          <h1 style="font-size: 20px;">وحدة الأنشطة الطلابية</h1>
+          <p style="font-size: 12.5px;">جامعة الملك سعود | عمادة شؤون الطلاب | إدارة الإسكان الطلابي</p>
+        </div>
+      </div>
+
+      <div class="poster-meta-pill">
+        <div class="meta-dim-tag" style="font-size: 12px; padding: 3px 10px;">المقاس: 138 × 120 سم</div>
+        <div class="meta-location-tag">بوابة القيادة والانضمام</div>
+      </div>
+    </header>
+
+    <!-- Gateway Body: 2 Columns -->
+    <div class="gateway-body-grid">
+
+      <!-- Column 1: Identity, Hierarchy & Values -->
+      <div class="gateway-col">
+
+        <!-- Emblem Hero -->
+        <div class="emblem-hero-white">
+          <div class="logo-frame">
+            <img src="assets/housing_logo.png" alt="شعار الإسكان">
+          </div>
+          <div>
+            <h2>إدارة الإسكان الطلابي</h2>
+            <p>وحدة الأنشطة الطلابية — مهد القيادة وبناء القدرات</p>
+          </div>
+        </div>
+
+        <!-- Hierarchy Tree -->
+        <div class="compact-tree-box">
+          <h4>الهيكل الإداري والقيادي:</h4>
+          <div class="tree-step">عمادة شؤون الطلاب — إدارة الإسكان الطلابي</div>
+          <div class="tree-step">المشرف العام &amp; رئيس وحدة الأنشطة الطلابية</div>
+          <div class="tree-step">قادة ونواب اللجان الطلابية الست</div>
+          <div class="tree-step">فرق العمل التخصصية الـ 27 والأعضاء المتميزون</div>
+        </div>
+
+        <!-- The 7 Core Values -->
+        <div class="compact-tree-box">
+          <h4>منظومة القيم المؤسسية (7 قيم):</h4>
+          <div class="values-compact-grid">
+            <div class="val-chip">1. الانضباط والمسؤولية</div>
+            <div class="val-chip">2. العمل الجماعي</div>
+            <div class="val-chip">3. الجودة والاحترافية</div>
+            <div class="val-chip">4. المبادرة والإبداع</div>
+            <div class="val-chip">5. الشفافية والمساءلة</div>
+            <div class="val-chip">6. التطوير المستمر</div>
+            <div class="val-chip" style="grid-column: span 2;">7. خدمة الطالب والجامعة</div>
+          </div>
+        </div>
+
+        <!-- Contact Strip -->
+        <div class="contact-card-white">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="#16a34a"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z"/></svg>
+            <div>
+              <div style="font-size: 10px; color: var(--text-muted);">واتساب وحدة الأنشطة</div>
+              <div style="font-family: var(--font-accent); font-weight: 700; font-size: 13px;">0118063549</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="var(--ksu-blue)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div>
+              <div style="font-size: 10px; color: var(--text-muted);">البريد الرسمي</div>
+              <div style="font-family: var(--font-accent); font-weight: 600; font-size: 11px;">aalznnan@ksu.edu.sa</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Column 2: Big QR Portal & Recruitment Action -->
+      <div class="gateway-col">
+
+        <div class="qr-hero-card">
+          <span style="background: var(--gold-accent-light); color: var(--gold-dark); font-size: 11.5px; font-weight: 800; padding: 4px 12px; border-radius: 20px; border: 1px solid var(--gold-accent); margin-bottom: 8px;">
+            باب الترشيح مفتوح للفصل الحالي
+          </span>
+          <h3 style="font-family: var(--font-heading); font-size: 20px; font-weight: 900; color: var(--ksu-blue); margin-bottom: 4px;">
+            لا تكتفِ بحضور الأنشطة… كُن أحد صُنّاعها!
+          </h3>
+          <p style="font-size: 12px; color: var(--text-secondary); max-width: 320px; margin: 0 auto;">
+            امسح الرمز بكاميرا جوالك وسجّل رغبتك بالانضمام إلى إحدى اللجان الطلابية الست بإسكان جامعة الملك سعود
+          </p>
+
+          <!-- Real QR Code SVG -->
+          <div class="qr-large-frame">
+            <img src="assets/qr_registration.svg" alt="رمز QR للترشيح والتسجيل">
+          </div>
+
+          <div style="display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-top: 4px;">
+            <span style="background: var(--bg-subtle); border: 1px solid var(--border-light); font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">⭐ ساعات تطوعية</span>
+            <span style="background: var(--bg-subtle); border: 1px solid var(--border-light); font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">📜 شهادات شكر وتقدير</span>
+            <span style="background: var(--bg-subtle); border: 1px solid var(--border-light); font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 600;">🎯 تدريب وصقل القيادة</span>
+          </div>
+
+          <div style="margin-top: 10px; font-family: var(--font-accent); font-size: 11px; color: var(--text-muted);">
+            رابط الاستمارة المباشر: forms.gle/vxAYqhgXkpvEc7GF9
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom 6 Committees Mini-strip -->
+    <footer class="poster-bottom-bar" style="padding: 10px 30px;">
+      <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+        <span style="font-weight: 700; color: var(--ksu-blue); font-size: 11.5px;">اللجان التخصصية:</span>
+        <span class="val-item" style="border-right: 3px solid var(--color-tech);">1. الابتكار والتقنية</span>
+        <span class="val-item" style="border-right: 3px solid var(--color-media);">2. الإعلام</span>
+        <span class="val-item" style="border-right: 3px solid var(--color-talent);">3. المواهب والفنون</span>
+        <span class="val-item" style="border-right: 3px solid var(--color-pr);">4. العلاقات والشركات</span>
+        <span class="val-item" style="border-right: 3px solid var(--color-logistics);">5. الدعم اللوجستي</span>
+        <span class="val-item" style="border-right: 3px solid var(--color-agriculture);">6. الزراعة والمسطحات</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    if (window.self !== window.top) {
+      document.body.classList.add('is-embedded');
+    }
+  </script>
+</body>
+</html>
